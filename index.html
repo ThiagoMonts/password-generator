@@ -8,8 +8,23 @@
     <title>Gerador de Senhas</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container-logo">
+        <h1 class="logo">GERADOR DE SENHAS</h1>
+    </div>
+
+    <main class="container-input">
+        <span>Tamanho <span id="valor"></span>caracteres</span>
+        <input id="slider" type="range" class="slider" min="5" value="15" max="25">
+        <button id="button" class="button-cta">Gerar senha</button>
+    </main>
     
+    <div id="container-password" class="container-password hide">
+        <span class="title">Sua senha gerada foi:</span>
+        <span id="password" class="password">12345678</span>
+        <span class="tooltip">Clique na senha para copiar</span>
+    </div>
 </body>
 </html>
